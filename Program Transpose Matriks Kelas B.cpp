@@ -58,19 +58,19 @@ int main (){
     	}
 
 	//transpose matriks A
-for (int i = 0; i <baris; i++)
-{	
-	for (int j=0; j<kolom;j++)
+	for (int i = 0; i <baris; i++)
+	{	
+		for (int j=0; j<kolom;j++)
 	{
 		transpose[j][i]=*(*(pA+i)+j;
 	}
-	cout << endl;
-}
-cout << "Transpose Matriks A = "<< endl;
-for (int i=0;i<baris;i++)
+		cout << endl;
+	}
+	cout << "Transpose Matriks A = "<< endl;
+	for (int i=0;i<baris;i++)
 	{	
-	cout <<endl;
+		cout <<endl;
   	}
-return 0;
-}
+	return 0;
+	}
 	
