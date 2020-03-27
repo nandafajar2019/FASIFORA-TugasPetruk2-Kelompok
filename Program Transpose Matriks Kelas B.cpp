@@ -37,7 +37,7 @@ int main (){
    	cout << endl;
 
     // matriks A
-    cout << "Masukkan elemen matriks : " << endl;
+    cout << "Masukkan elemen matriks A : " << endl;
     for (int i=0; i<baris; i++)
     {
         for (int j=0; j<kolom; j++)
