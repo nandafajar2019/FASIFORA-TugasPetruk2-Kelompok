@@ -12,11 +12,12 @@ Program Transpose Matriks.
 
 #include <iostream>
 using namespace std;
-void judul (string *pName, *pTeam)
-	{
-		cout << *pName << endl;
-		cout << *pTeam;
-	}
+void judul (string *pName, string *pTeam)
+{
+    cout << *pName << endl;
+    cout << *pTeam;
+}
+
 int main (){
 	// nama program
 	string name = "PROGRAM TRANSPOSE MATRIKS";
@@ -24,18 +25,18 @@ int main (){
 	string team = "by fajar, christofora, siever";
 	string *pTeam = &team;
 	judul (pName, pTeam);
-	
+
 	// deklarasi
 	int A[100][100]={}, baris, kolom, transpose[100][100];
 	int (*pA)[100]=A;
-	
+
 	// baris dan kolom matriks A
-	cout << endl << endl << endl;
-	cout << "Masukkan jumlah baris matriks A : ";
+        cout << endl << endl << endl;
+        cout << "Masukkan jumlah baris matriks A : ";
     	cin >> baris;
     	cout << "Masukkan jumlah kolom matriks A : ";
     	cin >> kolom;
-   	cout << endl;
+        cout << endl;
 
     	// matriks A
     	cout << "Masukkan elemen matriks A : " << endl;
@@ -53,25 +54,29 @@ int main (){
     	{
             for (int j=0; j<kolom; j++)
         {
-            cout << *(*(pA+i)+j) << "\t"; 
+            cout << *(*(pA+i)+j) << "\t";
         }
             cout << endl;
     	}
 
 	//transpose matriks A
-	for (int i = 0; i <baris; i++)
-	{	
+	for (int i=0; i<baris; i++)
+	{
 		for (int j=0; j<kolom;j++)
 	{
-		transpose[j][i]=*(*(pA+i)+j;
+		transpose[j][i]=*(*(pA+i)+j);
 	}
 		cout << endl;
 	}
 	cout << "Transpose Matriks A = "<< endl;
-	for (int i=0;i<baris;i++)
-	{	
+	for (int i=0; i<baris; i++)
+	{
+	    for (int j=0; j<kolom; j++)
+        {
+            cout << transpose[i][j] << "\t";
+        }
 		cout <<endl;
   	}
-	
+
 	return 0;
 }
