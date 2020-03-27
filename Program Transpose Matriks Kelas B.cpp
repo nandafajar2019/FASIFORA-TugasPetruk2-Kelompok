@@ -36,23 +36,23 @@ int main (){
     	cin >> kolom;
    	cout << endl;
 
-    // matriks A
-    cout << "Masukkan elemen matriks A : " << endl;
-    for (int i=0; i<baris; i++)
-    {
-        for (int j=0; j<kolom; j++)
+    	// matriks A
+    	cout << "Masukkan elemen matriks A : " << endl;
+    	for (int i=0; i<baris; i++)
+    	{
+            for (int j=0; j<kolom; j++)
         {
             cout << "Masukkan elemen a" << i+1 << j+1 << " : ";
             cin >> *(*(pA+i)+j);
         }
-        cout << endl;
-    }
-    cout << "Matriks A = " << endl;
-    for (int i=0; i<baris; i++)
-    {
-        for (int j=0; j<kolom; j++)
+            cout << endl;
+    	}
+    	cout << "Matriks A = " << endl;
+    	for (int i=0; i<baris; i++)
+    	{
+            for (int j=0; j<kolom; j++)
         {
             cout << *(*(pA+i)+j) << "\t"; 
         }
-        cout << endl;
-    }
+            cout << endl;
+    	}
