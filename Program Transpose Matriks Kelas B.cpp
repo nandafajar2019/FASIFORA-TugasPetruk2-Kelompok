@@ -12,9 +12,10 @@ Program Transpose Matriks.
 
 #include <iostream>
 using namespace std;
-void judul (string *pName)
+void judul (string *pName, *pTeam)
 	{
-		cout << *pName;
+		cout << *pName << endl;
+		cout << *pTeam;
 	}
 int main (){
 	// nama program
@@ -22,7 +23,7 @@ int main (){
 	string *pName = &name;
 	string team = "by fajar, christofora, siever";
 	string *pTeam = &team;
-	judul (pName);
+	judul (pName, pTeam);
 	
 	// deklarasi
 	int A[100][100]={}, baris, kolom, transpose[100][100];
