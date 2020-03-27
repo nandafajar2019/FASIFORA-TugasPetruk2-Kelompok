@@ -17,17 +17,24 @@ void judul (string *pName)
 		cout << *pName;
 	}
 int main (){
+	// nama program
 	string name = "PROGRAM TRANSPOSE MATRIKS";
 	string *pName = &name;
+	string team = "by fajar, christofora, siever";
+	string *pTeam = &team;
 	judul (pName);
+	
+	// deklarasi
 	int A[100][100]={}, baris, kolom, transpose[100][100];
 	int (*pA)[100]=A;
+	
+	// baris dan kolom matriks A
 	cout << endl << endl << endl;
-	cout << "Masukkan jumlah baris matriks : ";
-    cin >> baris;
-    cout << "Masukkan jumlah kolom matriks : ";
-    cin >> kolom;
-    cout << endl;
+	cout << "Masukkan jumlah baris matriks A : ";
+    	cin >> baris;
+    	cout << "Masukkan jumlah kolom matriks A : ";
+    	cin >> kolom;
+   	cout << endl;
 
     // matriks A
     cout << "Masukkan elemen matriks : " << endl;
@@ -49,6 +56,3 @@ int main (){
         }
         cout << endl;
     }
-
-
-// belum revisi
