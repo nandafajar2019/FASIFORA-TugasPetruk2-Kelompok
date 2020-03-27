@@ -77,6 +77,16 @@ int main (){
        		}
 	cout <<endl;
   	}	
+ cout<<"Lokasi Transpose Matriks: "<<endl;
+    for(int i=0;i<kolom;i++)
+	{
+        for(int j=0;j<kolom;j++)
+		{
+          		cout<<&(transpose[i][j])<<" ";
+           		if(j==baris-1)
+               		cout<<endl;
+       		 }
+    }
 
 	return 0;
 }
