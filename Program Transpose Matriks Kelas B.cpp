@@ -43,7 +43,7 @@ int main (){
     	for (int i=0; i<baris; i++)
     	{
             for (int j=0; j<kolom; j++)
-        {
+            {
             cout << "Masukkan elemen a" << i+1 << j+1 << " : ";
             cin >> *(*(pA+i)+j);
         }
