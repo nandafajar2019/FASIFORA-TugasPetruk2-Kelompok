@@ -11,8 +11,7 @@ Anggota kelompok :
 */
 
 
-#include <iostream>
-using namespace std;
+
 
  
 
