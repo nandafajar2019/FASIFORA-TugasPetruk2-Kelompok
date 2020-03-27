@@ -43,19 +43,19 @@ int main (){
     	for (int i=0; i<baris; i++)
     	{
             for (int j=0; j<kolom; j++)
-            {
-            	cout << "Masukkan elemen a" << i+1 << j+1 << " : ";
-            	cin >> *(*(pA+i)+j);
-            }
+            	{
+            		cout << "Masukkan elemen a" << i+1 << j+1 << " : ";
+            		cin >> *(*(pA+i)+j);
+           	 }
             cout << endl;
     	}
     	cout << "Matriks A = " << endl;
     	for (int i=0; i<baris; i++)
     	{
             for (int j=0; j<kolom; j++)
-        {
-            cout << *(*(pA+i)+j) << "\t";
-        }
+       		 {
+           		 cout << *(*(pA+i)+j) << "\t";
+      		  }
             cout << endl;
     	}
 
@@ -63,19 +63,19 @@ int main (){
 	for (int i=0; i<baris; i++)
 	{
 		for (int j=0; j<kolom;j++)
-	{
-		transpose[j][i]=*(*(pA+i)+j);
-	}
+		{
+			transpose[j][i]=*(*(pA+i)+j);
+		}
 		cout << endl;
 	}
 	cout << "Transpose Matriks A = "<< endl;
 	for (int i=0; i<baris; i++)
 	{
 	    for (int j=0; j<kolom; j++)
-        {
-            cout << transpose[i][j] << "\t";
-        }
-		cout <<endl;
+        	{
+            		cout << transpose[i][j] << "\t";
+       		}
+	cout <<endl;
   	}
 
 	return 0;
